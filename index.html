@@ -36,6 +36,11 @@
                         </nav>
                         <button class="btn" id="consult">Консультация</button>
                     </div>
+
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
                 </div>
             </div>
         </header>
@@ -95,6 +100,9 @@
                     </div>
                     <button class="prog btn">Найти программу</button>
                 </div>
+                <div class="find-programms-button">
+                    <button class="big-btn">Найти программу</button>
+                </div>
             </div>
         </div>
     </section>
@@ -116,6 +124,11 @@
                             классической латинской литературе.
                         </div>
                         <button class="big-btn">Программа тура</button>
+                    </div>
+                    <div class="about-img">
+                        <div class="about-img-back">
+                            <img src="assets/img/svg-icons/play.svg" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -412,12 +425,27 @@
                     Делимся впечатлениями
                 </div>
                 <div class="photo-report-img-list">
-                    <img class="photo-report-img-big" src="assets/img/card//photo-report/photo-report-1.png" alt="">
-                    <img class="photo-report-img-small" src="assets/img/card//photo-report/photo-report-2.png" alt="">
-                    <img class="photo-report-img-small" src="assets/img/card//photo-report/photo-report-3.png" alt="">
-                    <img class="photo-report-img-small" src="assets/img/card//photo-report/photo-report-5.png" alt="">
-                    <img class="photo-report-img-big" src="assets/img/card//photo-report/photo-report-4.png" alt="">
-                    <img class="photo-report-img-small" src="assets/img/card//photo-report/photo-report-6.png" alt="">
+                    <div class="photo-report-img-big">
+                        <img src="assets/img/card//photo-report/photo-report-1.png" alt="">
+                    </div>
+                    <div class="photo-report-img-small">
+                        <img src="assets/img/card//photo-report/photo-report-2.png" alt="">
+                    </div>
+                    <div class="photo-report-img-small">
+                        <img src="assets/img/card//photo-report/photo-report-3.png" alt="">
+
+                    </div>
+                    <div class="photo-report-img-small">
+                        <img src="assets/img/card//photo-report/photo-report-5.png" alt="">
+                    </div>
+                    <div class="photo-report-img-big">
+                        <img src="assets/img/card//photo-report/photo-report-4.png" alt="">
+
+                    </div>
+                    <div class="photo-report-img-small">
+                        <img src="assets/img/card//photo-report/photo-report-6.png" alt="">
+
+                    </div>
                 </div>
                 <button class="big-btn">Наш pinterest</button>
             </div>
@@ -627,6 +655,20 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-bar').classList.toggle('open'); 
+        })
+    </script>
 </body>
 
 </html>
